@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 # Cleanup
 rm -rf .repo/local_manifests
