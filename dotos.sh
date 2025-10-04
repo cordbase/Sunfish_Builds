@@ -3,7 +3,7 @@
 # Cleanup
 rm -rf .repo/local_manifests
 rm -rf prebuilts/clang/host/linux-x86
-
+rm -rf vendor/google/sunfish
 # Repo Init
 repo init -u git://github.com/DotOS/manifest.git -b dot11
 
