@@ -7,9 +7,6 @@ rm -rf prebuilts/clang/host/linux-x86
 # Repo Init
 repo init -u git://github.com/DotOS/manifest.git -b dot11
 
-# Gapps
-git clone --depth 1 --branch gapps https://github.com/cordbase/local_manifest.git .repo/local_manifests
-
 # Repo Sync
 /opt/crave/resync.sh 
 
