@@ -5,7 +5,7 @@ rm -rf .repo/local_manifests
 rm -rf prebuilts/clang/host/linux-x86
 rm -rf vendor/google/sunfish
 # Repo Init
-repo init -u git://github.com/DotOS/manifest.git -b dot11
+repo init -u https://github.com/DotOS/manifest.git -b dot11
 
 ## Device Trees
 #git clone --depth=1 -b dotos https://github.com/cordbase/local_manifest.git .repo/local_manifests
