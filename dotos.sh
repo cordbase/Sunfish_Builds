@@ -3,9 +3,6 @@
 # Cleanup
 rm -rf .repo/local_manifests
 rm -rf prebuilts/clang/host/linux-x86
-rm -rf device/google/sunfish
-rm -rf vendor/google/sunfish
-rm -rf kernel/google/sunfish
 
 # Repo Init
 repo init -u git://github.com/DotOS/manifest.git -b dot11
@@ -15,6 +12,8 @@ repo init -u git://github.com/DotOS/manifest.git -b dot11
 
 # Repo Sync
 /opt/crave/resync.sh 
+
+git clone --depth=1 https://github.com/sourajitk/vendor_google_sunfish.git vendor/google/sunfish
 
 # Build
 source build/envsetup.sh
