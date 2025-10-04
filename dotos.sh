@@ -10,8 +10,8 @@ rm -rf kernel/google/sunfish
 # Repo Init
 repo init -u git://github.com/DotOS/manifest.git -b dot11
 
-#Device Trees
-git clone --depth=1 -b dotos https://github.com/cordbase/local_manifest.git .repo/local_manifests
+## Device Trees
+#git clone --depth=1 -b dotos https://github.com/cordbase/local_manifest.git .repo/local_manifests
 
 # Repo Sync
 /opt/crave/resync.sh 
