@@ -14,7 +14,7 @@ git clone --depth 1 --branch gapps https://github.com/cordbase/local_manifest.gi
 /opt/crave/resync.sh 
 
 # Device tree
-git clone --depth=1 -b dotos https://github.com/LineageOS/android_device_google_sunfish.git device/google/sunfish
+git clone --depth=1 -b dotos https://github.com/cordbase/android_device_google_sunfish.git device/google/sunfish
 
 # Vendor tree
 git clone --depth=1 https://github.com/sourajitk/vendor_google_sunfish.git vendor/google/sunfish
