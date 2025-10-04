@@ -4,21 +4,17 @@
 rm -rf .repo/local_manifests
 rm -rf prebuilts/clang/host/linux-x86
 rm -rf device/google/sunfish
+rm -rf vendor/google/sunfish
+rm -rf kernel/google/sunfish
 
 # Repo Init
 repo init -u git://github.com/DotOS/manifest.git -b dot11
 
+#Device Trees
+git clone --depth=1 -b dotos https://github.com/cordbase/local_manifest.git .repo/local_manifests
+
 # Repo Sync
 /opt/crave/resync.sh 
-
-# Device tree
-git clone --depth=1 -b dotos https://github.com/cordbase/android_device_google_sunfish.git device/google/sunfish
-
-# Vendor tree
-git clone --depth=1 https://github.com/sourajitk/vendor_google_sunfish.git vendor/google/sunfish
-
-# Kernel tree
-git clone --depth=1 https://github.com/LineageOS/android_kernel_google_sunfish.git kernel/google/sunfish
 
 # Build
 source build/envsetup.sh
