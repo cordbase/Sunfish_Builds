@@ -8,7 +8,7 @@ rm -rf vendor/google/sunfish
 rm -rf kernel/google/sunfish
 
 # Repo Init
-repo init -u https://github.com/DotOS/manifest.git -b dot11
+repo init -u https://github.com/DotOS/manifest.git -b dot11 --git-lfs
 
 # Device Trees
 git clone --depth=1 -b dotos https://github.com/cordbase/local_manifest.git .repo/local_manifests
