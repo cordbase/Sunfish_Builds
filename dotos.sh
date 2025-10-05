@@ -19,4 +19,4 @@ repo sync -c -j$(nproc --all) --fail-fast --force-sync --no-clone-bundle --no-ta
 # Build
 source build/envsetup.sh
 lunch dot_sunfish-userdebug
-make bacon
+make bacon -j$(nproc --all)
